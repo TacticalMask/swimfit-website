@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="J3 Swim Fit builds confident swimmers in Maraval, Trinidad with programmes for children, adults, and aqua fitness."
+      content="J3 Swim Fit is a learn-to-swim school in Maraval, Trinidad focused on comfort, safety, and stroke development for children and adults."
     />
     <title>J3 Swim Fit | Comfort, Safety & Stroke Development</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,223 +14,235 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/multipage.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
+    <div class="ticker" aria-live="polite">
+      <div class="ticker__inner">
+        <span>Let's go swimming!&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+        <span>Holiday updates posted here.&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+        <span>Now enrolling swimmers 2½ years to adults.</span>
+      </div>
+    </div>
+
     <header class="site-header" id="top">
-      <div class="container site-header__inner">
-        <a class="brand" href="index.html">
+      <div class="container site-header__content">
+        <a class="brand" href="#top">
           <img src="assets/images/logo.png" alt="J3 Swim Fit logo" />
-          J3 Swim Fit
         </a>
-        <button
-          class="site-header__toggle"
-          type="button"
-          aria-label="Toggle navigation"
-          aria-expanded="false"
-          data-toggle
-        >
+        <button class="site-header__toggle" aria-label="Toggle navigation">
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <nav class="site-nav" aria-label="Main navigation" data-nav data-open="false">
+        <nav class="site-nav" aria-label="Main navigation">
           <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="schedule-faq.html">Schedule &amp; FAQ</a></li>
-            <li><a href="contact-registration.html">Contact / Registration</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a class="button button--primary" href="contact-registration.html#registration">Register</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#approach">Our Approach</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a class="button button--primary" href="#register">Register</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="page">
-      <section class="hero">
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero__overlay"></div>
         <div class="container hero__content">
-          <!--<span class="badge">Now enrolling swimmers 2½ years to adults</span>-->
-          <h1>Comfort, Safety &amp; Stroke Development</h1>
+          <h1 id="hero-heading">Comfort, Safety &amp; Stroke Development</h1>
           <p>
-            Join our learn-to-swim school at the Shoppes of Maraval. Certified coaches guide every swimmer toward confidence in
-            the water through patient, hands-on instruction.
+            Learn to swim with J3 Swim Fit at the Shoppes of Maraval. Our certified
+            coach-led programme builds confident swimmers through water safety,
+            comfort, and sound technique.
           </p>
           <div class="hero__actions">
-            <a class="button button--primary" href="contact-registration.html#registration">Book a class</a>
-            <a class="button button--ghost" href="schedule-faq.html">View schedule</a>
+            <a class="button button--primary" href="#register">Book a class</a>
+            <a class="button button--ghost" href="#schedule">View schedule</a>
           </div>
         </div>
       </section>
 
-      <section class="section section--alt">
-        <div class="container split split--two">
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <div class="container section__grid">
           <div>
-            <div class="section__header" style="text-align: left">
-              <h2>Welcome to J3 Swim Fit</h2>
-              <p>
-                We are a learn-to-swim school located in the Shoppes of Maraval,
-                Trinidad, led by certified swim teacher and level 2 coach Jennice
-                Price. Our primary focus is making sure children feel safe and 
-                comfortable in large bodies of water. Once this is achieved the 
-                focus shifts to developing proper stroke technique.
-              </p>
-            </div>
+            <h2 id="about-heading">Welcome to J3 Swim Fit</h2>
+            <p>
+              We are a learn-to-swim school located in the Shoppes of Maraval,
+              Trinidad, led by certified swim teacher and level 2 coach Jennice
+              Price. From 2½ year-olds to adults, we teach every swimmer to feel
+              safe and comfortable in the water before advancing stroke work.
+            </p>
             <p>
               Students progress from foundational water skills through
               pre-competitive technique for all four strokes, supported by a
               hands-on coaching team in and around the pool.
             </p>
-            <ul class="feature-list">
-              <li>Small, convenient classes running year-round</li>
-              <li>Programmes tailored to your pace and confidence level</li>
-              <li>Teachers in the water or on deck for hands-on guidance</li>
-            </ul>
           </div>
-          <div class="split__media">
-            <img src="assets/images/pool-1.jpg" alt="Coach supporting a young swimmer in the pool" />
+          <div class="section__card">
+            <h3>Quick facts</h3>
+            <ul>
+              <li>Small, convenient classes offered year-round</li>
+              <li>Hands-on guidance with teachers in the water or on deck</li>
+              <li>Programmes tailored to your pace and confidence level</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section__header">
-            <h2>Programmes for Every Swimmer</h2>
-            <p>Progress at your own pace with classes designed for different ages and goals.</p>
+      <section class="section section--alt" id="approach" aria-labelledby="approach-heading">
+        <div class="container section__grid">
+          <div>
+            <h2 id="approach-heading">Our Approach</h2>
+            <p>
+              Every lesson centres on water safety, balance, and comfort to build a
+              strong foundation before introducing advanced skills. As swimmers
+              grow, we emphasise stroke mechanics, breathing, and rhythm across
+              freestyle, backstroke, breaststroke, and butterfly.
+            </p>
+            <p>
+              Our supportive environment keeps learning fun while moving at the
+              swimmer’s pace, ensuring confidence in and out of the pool.
+            </p>
           </div>
-          <div class="grid grid--two-columns">
+          <div class="section__card">
+            <h3>What you need</h3>
+            <ul>
+              <li>Swimwear and a swim cap</li>
+              <li>No floaties needed—our hands-on team keeps you supported</li>
+              <li>Just bring your enthusiasm to learn!</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="programs" aria-labelledby="programs-heading">
+        <div class="container">
+          <h2 id="programs-heading">Programmes</h2>
+          <div class="card-grid">
             <article class="card">
-              <span class="card__eyebrow">Children</span>
-              <h3>Children's Learn-to-Swim</h3>
+              <h3>Children's Classes</h3>
               <p>
-                Build water confidence through floating, balance, and stroke fundamentals while keeping the experience playful and
-                positive.
+                Small group lessons focus on water confidence, floating, and stroke
+                fundamentals for young swimmers.
               </p>
-              <p class="card__eyebrow">Ages 2½+</p>
+              <p class="card__time">Ages 2½ and up</p>
             </article>
             <article class="card">
-              <span class="card__eyebrow">Adults</span>
-              <h3>Adult Learn-to-Swim</h3>
-              <p>
-                Supportive instruction tailored to your pace—ideal for beginners or swimmers who want to refresh technique before
-                heading back to open water or the pool.
-              </p>
-              <p class="card__eyebrow">Evening &amp; weekend options</p>
-            </article>
-            <article class="card">
-              <span class="card__eyebrow">Fitness</span>
               <h3>Aqua Fitness</h3>
               <p>
-                Low-impact aqua classes led from the deck to improve mobility, balance, and strength while staying gentle on
-                joints.
+                Low-impact aqua classes that keep you moving, improve balance, and
+                build strength.
               </p>
-              <p class="card__eyebrow">Thursday &amp; Friday mornings</p>
+              <p class="card__time">Thursday &amp; Friday mornings</p>
             </article>
             <article class="card">
-              <span class="card__eyebrow">Progression</span>
-              <h3>Stroke Technique Clinics</h3>
+              <h3>Adult Learn-to-Swim</h3>
               <p>
-                Focused sessions cover breathing, kick timing, and coordination across freestyle, backstroke, breaststroke, and
-                butterfly to sharpen competitive skills.
+                Supportive instruction tailored to your pace—perfect for beginners
+                or those returning to the pool.
               </p>
-              <p class="card__eyebrow">Seasonal intensives</p>
+              <p class="card__time">Evenings &amp; weekend options</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--alt">
-        <div class="container split split--two">
-          <div>
-            <div class="section__header" style="text-align: left">
-              <h2>Our Approach</h2>
-              <p>
-                Each class centres on water safety, comfort, and technique so swimmers grow confident in every environment.
-              </p>
+      <section class="section section--alt" id="schedule" aria-labelledby="schedule-heading">
+        <div class="container">
+          <h2 id="schedule-heading">Class Schedule</h2>
+          <p>Monthly sessions mean you can dive in at any time.</p>
+          <div class="schedule">
+            <div class="schedule__column">
+              <h3>Children's Classes</h3>
+              <ul>
+                <li>Tuesday &mdash; 3:30&nbsp;pm</li>
+                <li>Tuesday &mdash; 4:30&nbsp;pm</li>
+                <li>Wednesday &mdash; 3:30&nbsp;pm</li>
+                <li>Thursday &mdash; 4:30&nbsp;pm</li>
+                <li>Saturday &mdash; 8:00&nbsp;am</li>
+                <li>Saturday &mdash; 9:00&nbsp;am</li>
+                <li>Saturday &mdash; 10:00&nbsp;am</li>
+              </ul>
             </div>
-            <p class="quote">
-              “We teach every swimmer to feel safe and balanced in the water first, then build efficient stroke technique one
-              skill at a time.”
-            </p>
-          </div>
-          <div>
-            <ul class="feature-list">
-              <li>Hands-on support from instructors in and out of the pool</li>
-              <li>Progress tracking from foundations to pre-competitive strokes</li>
-              <li>Celebrations of every milestone to keep motivation high</li>
-            </ul>
-            <a class="button button--primary" href="about.html">Meet the team</a>
+            <div class="schedule__column">
+              <h3>Aqua Classes</h3>
+              <ul>
+                <li>Thursday &mdash; 9:00&nbsp;am</li>
+                <li>Friday &mdash; 9:00&nbsp;am</li>
+              </ul>
+              <h3>Adult Learn-to-Swim</h3>
+              <ul>
+                <li>Monday &mdash; 6:30&nbsp;pm</li>
+                <li>Saturday &mdash; 7:00&nbsp;am</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="faq" aria-labelledby="faq-heading">
         <div class="container">
-          <div class="section__header">
-            <h2>Ready to Dive In?</h2>
-            <p>Secure your spot in the next monthly session and we’ll confirm details within one business day.</p>
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+          <div class="faq">
+            <details>
+              <summary>When can I start?</summary>
+              <p>You can begin as soon as you are ready—classes run year-round.</p>
+            </details>
+            <details>
+              <summary>Do I need any special equipment?</summary>
+              <p>Bring your swimwear and a swim cap. We take care of the rest.</p>
+            </details>
+            <details>
+              <summary>Do you use floaties?</summary>
+              <p>
+                No floaties required. Our hands-on approach keeps swimmers secure
+                while they build balance and comfort.
+              </p>
+            </details>
+            <details>
+              <summary>What ages do you teach?</summary>
+              <p>We welcome swimmers from 2½ years old through adults.</p>
+            </details>
           </div>
-          <div class="cta-banner">
+        </div>
+      </section>
+
+      <section class="section section--highlight" id="register" aria-labelledby="register-heading">
+        <div class="container section__grid section__grid--center">
+          <div>
+            <h2 id="register-heading">Ready to Dive In?</h2>
             <p>
-              Tell us about your swimmer and preferred class times using our quick registration form. We’ll
-              reach out with personalised guidance.
+              Save your spot in the next session using our quick online form. A
+              team member will follow up to confirm details and answer questions.
             </p>
-            <div>
-              <a class="button button--ghost" href="contact-registration.html">Contact us</a>
-              <a class="button button--primary" href="contact-registration.html#registration">Register now</a>
-            </div>
           </div>
-        </div>
-      </section>
-
-      <section class="section section--alt">
-        <div class="container">
-          <div class="section__header">
-            <h2>From the Pool Deck</h2>
-            <p>Stories, progress updates, and tips from our latest sessions.</p>
-          </div>
-          <div class="blog-list">
-            <article class="blog-card">
-              <time datetime="2024-03-22">March 22, 2025</time>
-              <h3>Saturday Splash Recap</h3>
-              <p>
-                Our youngest swimmers mastered floating independently this week! Peek inside our playful drills that build balance
-                before we introduce new strokes.
-              </p>
-              <a class="button button--ghost" href="blog.html#saturday-splash">Read more</a>
-            </article>
-            <article class="blog-card">
-              <time datetime="2024-03-15">March 15, 2025</time>
-              <h3>Aqua Fitness Playlist</h3>
-              <p>
-                Coach Jennice shares the energising routine behind our Thursday and Friday aqua classes plus stretching tips for
-                working at your own pace.
-              </p>
-              <a class="button button--ghost" href="blog.html#aqua-fitness-playlist">Read more</a>
-            </article>
-            <article class="blog-card">
-              <time datetime="2024-02-29">February 29, 2025</time>
-              <h3>Meet Our New Junior Coach</h3>
-              <p>
-                Say hello to Coach Maya, a former national swimmer who specialises in teaching gentle breathing progressions to
-                nervous beginners.
-              </p>
-              <a class="button button--ghost" href="blog.html#coach-maya">Read more</a>
-            </article>
-          </div>
+          <a
+            class="button button--contrast"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd1saARXlZkvXsG8PyDYV49ZnaHxb9FWrZMUwm3JeAjL4NPtA/viewform"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Sign up for classes
+          </a>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container site-footer__inner">
+    <footer class="site-footer" id="contact" aria-labelledby="contact-heading">
+      <div class="container site-footer__content">
         <div>
-          <h2>Contact</h2>
+          <h2 id="contact-heading">Contact</h2>
           <p>
             <strong>Swim Classes:</strong> <a href="tel:+18687888375">(868) 788-8375</a><br />
             <strong>Aqua Classes:</strong> <a href="tel:+18686899058">(868) 689-9058</a><br />
-            <strong>Email:</strong> <a href="mailto:j3swimfit@gmail.com">j3swimfit@gmail.com</a>
+            <strong>Email:</strong>
+            <a href="mailto:j3swimfit@gmail.com">j3swimfit@gmail.com</a>
           </p>
         </div>
         <div>
@@ -238,17 +250,17 @@
           <p>Shoppes of Maraval, Maraval, Trinidad</p>
           <a class="button button--ghost" href="#top">Back to top</a>
         </div>
-        <div>
-          <h3>Follow</h3>
+        <div class="site-footer__social">
+          <p>Follow our journey:</p>
           <ul>
             <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a></li>
             <li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a></li>
           </ul>
         </div>
       </div>
-      <p class="site-footer__legal">© <span data-year></span> J3 Swim Fit. All rights reserved.</p>
+      <p class="site-footer__legal">© <span id="year"></span> J3 Swim Fit. All rights reserved.</p>
     </footer>
 
-    <script src="scripts/multipage.js" defer></script>
+    <script src="scripts/main.js" defer></script>
   </body>
 </html>
