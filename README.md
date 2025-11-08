@@ -39,12 +39,4 @@ Additional original design files (logo, print assets, photography) remain in the
 - If more pages are needed (e.g., dedicated FAQ or Blog), create additional HTML files within `site/` and reuse the shared CSS/JS assets.
 - When ready to deploy, host the contents of the `site/` directory via a static hosting service such as Netlify, Vercel, or GitHub Pages.
 
-## Local Preview
 
-A simple way to preview the site locally is by serving the `site/` directory with any static file server, for example:
-
-```bash
-python -m http.server --directory site 8000
-```
-
-Then visit `http://localhost:8000` in your browser.
