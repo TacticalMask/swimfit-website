@@ -1,13 +1,9 @@
 # J3 Swim Fit Website Starter
 
-This repository contains an initial static website implementation and asset organisation plan for the J3 Swim Fit learn-to-swim school located at the Shoppes of Maraval, Trinidad.
+This repository contains two static website experiences for the J3 Swim Fit learn-to-swim school located at the Shoppes of Maraval, Trinidad:
 
-## Project Goals
-
-- Present a welcoming, modern landing page that highlights comfort, safety, and stroke development.
-- Share class schedules, programme overviews, frequently asked questions, and contact information sourced from the client’s brief.
-- Provide an easy call to action linking to the existing Google Form registration.
-- Organise assets and code so that future updates remain straightforward for the client or supporting developers.
+- **Single-page experience**: the original landing page that combines programme highlights, schedule snapshots, FAQs, and a registration call-to-action in one scrollable view.
+- **Multipage experience**: an alternative build that splits the content across dedicated Home, About, Schedule & FAQ, Contact/Registration, and Blog pages while reusing the same messaging and data.
 
 ## Folder Structure
 
@@ -18,24 +14,31 @@ site/
 │       ├── logo.png
 │       ├── pool-1.jpg
 │       └── pool-2.jpg
+├── about.html
+├── blog.html
+├── contact-registration.html
 ├── index.html
+├── schedule-faq.html
+├── single-page.html
 ├── scripts/
-│   └── main.js
+│   ├── main.js
+│   └── multipage.js
 └── styles/
-    └── main.css
+    ├── main.css
+    └── multipage.css
 ```
 
-- `site/index.html`: Main landing page that pulls together the hero section, programme summaries, schedule, FAQ, and registration CTA.
-- `site/styles/main.css`: Global styles with colour variables, layout rules, responsive design, and ticker animation.
-- `site/scripts/main.js`: Lightweight enhancements for the mobile navigation menu, dynamic copyright year, and ticker duplication.
-- `site/assets/images/`: Optimised copies of supplied imagery for use on the web page.
+- `site/single-page.html`: Original one-page layout that continues to use `styles/main.css` and `scripts/main.js`.
+- `site/index.html`, `site/about.html`, `site/schedule-faq.html`, `site/contact-registration.html`, `site/blog.html`: The multipage variant, all powered by `styles/multipage.css` and `scripts/multipage.js` for shared styling and behaviour.
+- `site/assets/images/`: Optimised copies of supplied imagery for use on the web pages.
 
 Additional original design files (logo, print assets, photography) remain in the repository root for reference.
 
 ## Next Steps & Suggestions
 
-- Add optimised web versions of any additional photography or video assets to `site/assets/` and reference them in new sections as required.
+- Add optimised web versions of any additional photography or video assets to `site/assets/` and reference them in the relevant sections.
 - Consider exporting SVG artwork from the AI/PDF logo for sharper rendering across devices.
-- If more pages are needed (e.g., dedicated FAQ or Blog), create additional HTML files within `site/` and reuse the shared CSS/JS assets.
+- Keep blog entries fresh by replacing the placeholder content in `site/blog.html` with real programme updates or swim tips.
 - When ready to deploy, host the contents of the `site/` directory via a static hosting service such as Netlify, Vercel, or GitHub Pages.
+
 
